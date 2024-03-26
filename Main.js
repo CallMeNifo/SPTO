@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
+    var loaderWrapper = document.querySelector(".loader-wrapper");
+
+    // Hide the loader after a delay (e.g., 2000 milliseconds)
+    setTimeout(function() {
+        loaderWrapper.style.display = "none";
+    }, 1000); // Adjust the delay time as needed
+});
+
+document.addEventListener("DOMContentLoaded", function() {
     var scrollDownText = document.getElementById("scroll-text");
 
     scrollDownText.addEventListener("click", function() {
@@ -164,6 +173,3 @@ document.addEventListener("DOMContentLoaded", function() {
         slider.style.transform = "translateX(" + (-slideWidth * currentSlide) + "px)";
     });
 });
-
-
-
