@@ -7,6 +7,39 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
+    var slider = document.querySelector(".slider");
+    var slides = document.querySelectorAll(".slider img");
+    var slideWidth = slides[0].clientWidth;
+    var currentSlide = 0;
+
+    function updateSlideWidth() {
+        slideWidth = slides[0].clientWidth;
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        if (currentSlide === 7) {
+            slider.style.transition = "none";
+            slider.style.transform = "translateX(0)";
+            setTimeout(function() {
+                slider.style.transition = "transform 0.5s ease-in-out";
+                currentSlide = 1;
+                slider.style.transform = "translateX(" + (-slideWidth * currentSlide) + "px)";
+            }, 10);
+        } else {
+            slider.style.transform = "translateX(" + (-slideWidth * currentSlide) + "px)";
+        }
+    }
+
+    setInterval(nextSlide, 2000);
+
+    window.addEventListener("resize", function() {
+        updateSlideWidth();
+        slider.style.transform = "translateX(" + (-slideWidth * currentSlide) + "px)";
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
     var scrollDownText = document.getElementById("scroll-text");
 
     scrollDownText.addEventListener("click", function() {
@@ -72,36 +105,3 @@ function toggleDropdown() {
         dropdownContent.style.display = "block";
     }
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-    var slider = document.querySelector(".slider");
-    var slides = document.querySelectorAll(".slider img");
-    var slideWidth = slides[0].clientWidth;
-    var currentSlide = 0;
-
-    function updateSlideWidth() {
-        slideWidth = slides[0].clientWidth;
-    }
-
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        if (currentSlide === 7) {
-            slider.style.transition = "none";
-            slider.style.transform = "translateX(0)";
-            setTimeout(function() {
-                slider.style.transition = "transform 0.5s ease-in-out";
-                currentSlide = 1;
-                slider.style.transform = "translateX(" + (-slideWidth * currentSlide) + "px)";
-            }, 10);
-        } else {
-            slider.style.transform = "translateX(" + (-slideWidth * currentSlide) + "px)";
-        }
-    }
-
-    setInterval(nextSlide, 2000);
-
-    window.addEventListener("resize", function() {
-        updateSlideWidth();
-        slider.style.transform = "translateX(" + (-slideWidth * currentSlide) + "px)";
-    });
-});
