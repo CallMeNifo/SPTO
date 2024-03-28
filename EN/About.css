@@ -32,7 +32,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(51, 51, 51, 0.5); /* Adjust the background color and opacity as needed */
+    background-color: rgba(51, 51, 51, 0.5);
     z-index: 20000;
     display: flex;
     justify-content: center;
@@ -40,12 +40,12 @@ body::before {
 }
 
 .loader {
-    border: 10px solid #EBDBD1; /* Light gray border */
-    border-top: 10px solid #738992; /* Blue border for animation */
+    border: 10px solid #EBDBD1;
+    border-top: 10px solid #738992;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    animation: spin 2s linear infinite; /* Spin animation */
+    animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
@@ -78,6 +78,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #A6C4D0;
     text-decoration: none;
     font-size: 16px;
@@ -92,7 +93,7 @@ nav ul li a:hover {
 nav ul li b {
     color: #738992;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     transition: color 0.5s;
 }
 
@@ -146,11 +147,13 @@ nav ul li b:hover {
 
 .main h1 {
     font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 10px;
 }
 
 .main p {
     font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .scroll {
@@ -184,6 +187,7 @@ nav ul li b:hover {
 
 .subheader {
     font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .video-container {

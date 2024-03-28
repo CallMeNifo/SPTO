@@ -8,7 +8,7 @@ body {
     font-family:'Times New Roman', Times, serif;
     color: #88ACBC;
     line-height: 1.6;
-    background-image: url('../Pictures/Homepagebg.jpg');
+    background-image: url('../Pictures/Contactbg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -93,7 +93,7 @@ nav ul li a:hover {
 nav ul li b {
     color: #738992;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     transition: color 0.5s;
 }
 
@@ -139,98 +139,79 @@ nav ul li b:hover {
 }
 
 .main {
-    margin-top: -170px;
-    margin-bottom: -250px;
     color: #738992;
-    padding: 250px 20px;
-    text-align: center;
+    padding: 50px 20px;
+    text-align: left;
     position: relative;
 }
 
 .main h1 {
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: -40px;
-    text-align: left;
-}
-
-.main h2 {
-    font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: 5px;
-    text-align: left;
+    margin-bottom: 10px;
 }
 
 .main p {
     font-size: 18px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 800px;
+    padding-left: 10px;
 }
 
-.scroll {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.scroll p {
-    color: #738992;
-    font-size: 18px;
-}
-
-.scroll p:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.arrow {
-    border: solid #738992;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 10px;
-    transform: rotate(45deg);
+.contact img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    margin-left: 1000px;
+    margin-top: -200px;
 }
 
 .body {
-    margin-top: 500px;
-    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
 }
 
-
-.subheader {
+.body h1 {
     font-size: 50px;
+    text-align: left;
+}
+
+.body h2 {
+    font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: left;
-    padding-left: 70px;
+    padding-left: 20px;
 }
 
-.subtext {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 18px;
-    text-align: left;
-    padding-left: 80px;
-    padding-right: 80px;
-    line-height: 1.6;
-    max-height: calc(16px * 10);
-    overflow: hidden;
-}
-
-.smoltext {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 12px;
-    text-align: left;
-    padding-left: 90px;
-    line-height: 1.6;
-    max-height: calc(16px * 10);
-    overflow: hidden;
-}
-
-.linkword {
+.body p {
+    font-size: 20px;
     color: #738992;
-    text-decoration: underline;
-    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: -133px;
+    padding-left: 250px;
 }
 
-.linkword:hover {
-    color: #EBDBD1;
+.body q {
+    font-size: 20px;
+    color: #738992;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: -2px;
+    padding-left: 150px;
+}
+
+.body g {
+    font-size: 20px;
+    color: #738992;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    margin-bottom: -100px;
+    margin-top: 2px;
+    padding-left: 200px;
 }
 
 footer {
@@ -239,6 +220,7 @@ footer {
     color: #88ACBC;
     text-align: center;
     padding: 5px;
+    margin-top: 194px;
 }
 
 #bak2top {
@@ -265,25 +247,4 @@ footer {
 
 .logo {
     width: 48px;
-}
-
-.slider-container {
-    overflow: hidden;
-    position: relative;
-    margin-top: 15px;
-    max-width: 100%;
-}
-
-.slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slider img {
-    width: 32.7%;
-    height: 20%;
-    border-radius: 10px;
-    margin-right: 15px;
-    object-fit: cover;
-    object-position: center;
 }
